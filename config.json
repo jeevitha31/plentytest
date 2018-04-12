@@ -1,0 +1,803 @@
+[
+    {
+        "tab"    : "Novalnet Global Configuration",
+        "key"    : "activation_key",
+        "label"  : "Product activation key*",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Novalnet Global Configuration",
+        "key"    : "vendor_id",
+        "label"  : "Merchant ID*",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Novalnet Global Configuration",
+        "key"    : "auth_code",
+        "label"  : "Authentication code*",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Novalnet Global Configuration",
+        "key"    : "product_id",
+        "label"  : "Project ID*",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Novalnet Global Configuration",
+        "key"    : "tariff_id",
+        "label"  : "Tariff ID*",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Novalnet Global Configuration",
+        "key"    : "access_key",
+        "label"  : "Payment access key*",
+        "type"   : "text"
+    },        
+    {
+        "tab"    : "Novalnet Global Configuration",
+        "key"    : "order_cancel_status",
+        "label"  : "Cancellation order status",
+        "type"   : "text",
+        "default": "8"
+    },
+    {
+        "tab"    : "Novalnet Global Configuration",
+        "key"    : "referrer_id",
+        "label"  : "Referrer ID",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "cc_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "cc_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "cc_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "cc_3d",
+        "label"  : "Enable 3D secure",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "cc_on_hold",
+        "label"  : "Set a limit for on-hold transaction (in minimum unit of currency. E.g. enter 100 which is equal to 1.00)",
+        "type"   : "text"
+    },    
+    {
+        "tab"    : "Credit Card",
+        "key"    : "cc_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },    
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_holder_label_css",
+        "label"  : "Card holder name - Label",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_holder_field_css",
+        "label"  : "Card holder name - Input field",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_number_label_css",
+        "label"  : "Card number - Label",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_number_field_css",
+        "label"  : "Card number - Input field",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_date_label_css",
+        "label"  : "Expiry date - Label",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_date_field_css",
+        "label"  : "Expiry date - Input field",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_cvc_label_css",
+        "label"  : "CVC/CVV/CID - Label",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_cvc_field_css",
+        "label"  : "CVC/CVV/CID - Input field",
+        "type"   : "text"
+    },
+        {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_standard_style_label",
+        "label"  : "Standard - Label",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_standard_style_field",
+        "label"  : "Standard - Input field",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Credit Card",
+        "key"    : "novalnet_cc_standard_style_css",
+        "label"  : "Standard - CSS",
+        "type"   : "text",
+        "default": "body{color: #555;font-family: Verdana,Arial,sans-serif;font-size:12px;line-height: 1.5;}.label-group{width:152px !important;float:unset !important;}.row{float:unset !important;}"
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "sepa_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "novalnet_sepa_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "sepa_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "sepa_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "sepa_due_date",
+        "label"  : "SEPA Payment duration (in days)",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "sepa_on_hold",
+        "label"  : "Set a limit for on-hold transaction (in minimum unit of currency. E.g. enter 100 which is equal to 1.00)",
+        "type"   : "text"
+    },    
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "sepa_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "novalnet_sepa_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "novalnet_sepa_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "novalnet_sepa_payment_guarantee_active",
+        "label"  : "Enable payment guarantee",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "novalnet_sepa_guarantee_min_amount",
+        "label"  : "Minimum order amount (in minimum unit of currency. E.g. enter 100 which is equal to 1.00)",
+        "type"   : "text",
+        "default": "2000"
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "novalnet_sepa_guarantee_max_amount",
+        "label"  : "Maximum order amount (in minimum unit of currency. E.g. enter 100 which is equal to 1.00)",
+        "type"   : "text",
+        "default": "500000"
+    },
+    {
+        "tab"    : "Direct Debit SEPA",
+        "key"    : "novalnet_sepa_payment_guarantee_force_active",
+        "label"  : "Force Non-Guarantee payment",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "invoice_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "novalnet_invoice_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "invoice_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "invoice_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "invoice_due_date",
+        "label"  : "Payment due date (in days)",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "invoice_on_hold",
+        "label"  : "Set a limit for on-hold transaction (in minimum unit of currency. E.g. enter 100 which is equal to 1.00)",
+        "type"   : "text"
+    },    
+    {
+        "tab"    : "Invoice",
+        "key"    : "invoiceorder_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "invoice_callback_order_status",
+        "label"  : "Callback order status",
+        "type"   : "text",
+        "default": "9.5"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "invoice_payment_reference",
+        "label"  : "Payment Reference",
+        "type"   : "multi_select",
+        "possibleValues": {
+            "ref"     : "Novalnet Invoice Reference",
+            "tid"     : "TID",
+            "order_no": "Order No"
+        },
+        "default": "all"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "novalnet_invoice_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "novalnet_invoice_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "novalnet_invoice_payment_guarantee_active",
+        "label"  : "Enable payment guarantee",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "novalnet_invoice_guarantee_min_amount",
+        "label"  : "Minimum order amount (in minimum unit of currency. E.g. enter 100 which is equal to 1.00)",
+        "type"   : "text",
+        "default": "2000"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "novalnet_invoice_guarantee_max_amount",
+        "label"  : "Maximum order amount (in minimum unit of currency. E.g. enter 100 which is equal to 1.00)",
+        "type"   : "text",
+        "default": "500000"
+    },
+    {
+        "tab"    : "Invoice",
+        "key"    : "novalnet_invoice_payment_guarantee_force_active",
+        "label"  : "Force Non-Guarantee payment",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Prepayment",
+        "key"    : "prepayment_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Prepayment",
+        "key"    : "novalnet_prepayment_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Prepayment",
+        "key"    : "prepayment_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Prepayment",
+        "key"    : "prepayment_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Prepayment",
+        "key"    : "prepayment_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "Prepayment",
+        "key"    : "prepayment_callback_order_status",
+        "label"  : "Callback order status",
+        "type"   : "text",
+        "default": "9.5"
+    },
+    {
+        "tab"    : "Prepayment",
+        "key"    : "prepayment_payment_reference",
+        "label"  : "Payment Reference",
+        "type"   : "multi_select",
+        "possibleValues": {
+            "ref"     : "Novalnet Invoice Reference",
+            "tid"     : "TID",
+            "order_no": "Order No"
+        },
+        "default": "all"
+    },
+    {
+        "tab"    : "Prepayment",
+        "key"    : "novalnet_prepayment_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Prepayment",
+        "key"    : "novalnet_prepayment_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Instant Bank Transfer",
+        "key"    : "sofort_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Instant Bank Transfer",
+        "key"    : "novalnet_sofort_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Instant Bank Transfer",
+        "key"    : "sofort_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Instant Bank Transfer",
+        "key"    : "sofort_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Instant Bank Transfer",
+        "key"    : "sofort_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "Instant Bank Transfer",
+        "key"    : "novalnet_sofort_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Instant Bank Transfer",
+        "key"    : "novalnet_sofort_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "PayPal",
+        "key"    : "paypal_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "PayPal",
+        "key"    : "novalnet_paypal_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "PayPal",
+        "key"    : "paypal_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "PayPal",
+        "key"    : "paypal_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "PayPal",
+        "key"    : "paypal_on_hold",
+        "label"  : "Set a limit for on-hold transaction (in minimum unit of currency. E.g. enter 100 which is equal to 1.00)",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "PayPal",
+        "key"    : "paypal_payment_pending_status",
+        "label"  : "Order status for the pending payment",
+        "type"   : "text",
+        "default": "3"
+    },    
+    {
+        "tab"    : "PayPal",
+        "key"    : "paypal_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "PayPal",
+        "key"    : "novalnet_paypal_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "PayPal",
+        "key"    : "novalnet_paypal_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "iDeal",
+        "key"    : "ideal_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "iDeal",
+        "key"    : "novalnet_ideal_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "iDeal",
+        "key"    : "ideal_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "iDeal",
+        "key"    : "ideal_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "iDeal",
+        "key"    : "ideal_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "iDeal",
+        "key"    : "novalnet_ideal_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "iDeal",
+        "key"    : "novalnet_ideal_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "EPS",
+        "key"    : "eps_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "EPS",
+        "key"    : "novalnet_eps_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "EPS",
+        "key"    : "eps_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "EPS",
+        "key"    : "eps_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "EPS",
+        "key"    : "eps_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "EPS",
+        "key"    : "novalnet_eps_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "EPS",
+        "key"    : "novalnet_eps_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Giropay",
+        "key"    : "giropay_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Giropay",
+        "key"    : "novalnet_giropay_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Giropay",
+        "key"    : "giropay_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Giropay",
+        "key"    : "giropay_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Giropay",
+        "key"    : "giropay_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "Giropay",
+        "key"    : "novalnet_giropay_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Giropay",
+        "key"    : "novalnet_giropay_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Przelewy24",
+        "key"    : "przelewy_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Przelewy24",
+        "key"    : "novalnet_przelewy_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Przelewy24",
+        "key"    : "przelewy_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Przelewy24",
+        "key"    : "przelewy_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Przelewy24",
+        "key"    : "przelewy_payment_pending_status",
+        "label"  : "Order status for the pending payment",
+        "type"   : "text",
+        "default": "3"
+    },    
+    {
+        "tab"    : "Przelewy24",
+        "key"    : "przelewy_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "Przelewy24",
+        "key"    : "novalnet_przelewy_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Przelewy24",
+        "key"    : "novalnet_przelewy_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Barzahlen",
+        "key"    : "cashpayment_payment_active",
+        "label"  : "Enable payment method",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Barzahlen",
+        "key"    : "novalnet_cashpayment_test_mode",
+        "label"  : "Enable test mode",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Barzahlen",
+        "key"    : "cashpayment_payment_name",
+        "label"  : "Payment name",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Barzahlen",
+        "key"    : "cashpayment_description",
+        "label"  : "Payment description",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Barzahlen",
+        "key"    : "cashpayment_due_date",
+        "label"  : "Slip expiry date (in days)",
+        "type"   : "text"
+    },    
+    {
+        "tab"    : "Barzahlen",
+        "key"    : "cashpayment_order_completion_status",
+        "label"  : "Order completion status",
+        "type"   : "text",
+        "default": "7.1"
+    },
+    {
+        "tab"    : "Barzahlen",
+        "key"    : "cashpayment_callback_order_status",
+        "label"  : "Callback order status",
+        "type"   : "text",
+        "default": "9.5"
+    },
+    {
+        "tab"    : "Barzahlen",
+        "key"    : "novalnet_cashpayment_reference1",
+        "label"  : "Transaction reference 1",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Barzahlen",
+        "key"    : "novalnet_cashpayment_reference2",
+        "label"  : "Transaction reference 2",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Merchant script management",
+        "key"    : "callback_test_mode",
+        "label"  : "Deactivate IP address control (for test purpose only)",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Merchant script management",
+        "key"    : "enable_email",
+        "label"  : "Enable E-mail notification for callback",
+        "type"   : "checkbox",
+        "default": false
+    },
+    {
+        "tab"    : "Merchant script management",
+        "key"    : "email_to",
+        "label"  : "E-mail address (To)",
+        "type"   : "text"
+    },
+    {
+        "tab"    : "Merchant script management",
+        "key"    : "email_bcc",
+        "label"  : "E-mail address (Bcc)",
+        "type"   : "text"
+    }
+]
