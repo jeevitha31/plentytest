@@ -323,7 +323,7 @@ class NovalnetServiceProvider extends ServiceProvider
             //return $this->response->redirectTo('place-order');
         } else {
             // Redirects to the cancellation page.
-            return $this->response->redirectTo('checkout');
+            return $response->redirectTo('checkout');
         }
     
 				
