@@ -317,7 +317,7 @@ class NovalnetServiceProvider extends ServiceProvider
             //~ {
                 //~ unset($serverRequestData['data']['pan_hash']);
             //~ }
-            $sessionStorage->getPlugin()->setValue('nnPaymentData', array_merge($serverRequestData['data'], $responseData));
+            //$sessionStorage->getPlugin()->setValue('nnPaymentData', array_merge($serverRequestData['data'], $responseData));
 
             // Redirect to the success page.
             //return $this->response->redirectTo('place-order');
