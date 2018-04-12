@@ -276,37 +276,37 @@ class NovalnetServiceProvider extends ServiceProvider
         $eventDispatcher->listen(ExecutePayment::class,
             function (ExecutePayment $event) use ($paymentHelper, $paymentService, $sessionStorage, $transactionLogData)
             {
-				$paymentparams=$this->sessionStorage->getPlugin()->getValue('params');
-				$paymenturl=$this->sessionStorage->getPlugin()->getValue('url');
+				$paymentparams=$sessionStorage->getPlugin()->getValue('params');
+				$paymenturl=$sessionStorage->getPlugin()->getValue('url');
 				
-				 $response = $this->paymentHelper->executeCurl($paymentparams, $paymenturl);
-				
-				
+				 $response = $paymentHelper->executeCurl($paymentparams, $paymenturl);
 				
 				
 				
 				
 				
 				
-		$responseData = $this->paymentHelper->convertStringToArray($response['response'], '&');
+				
+				
+		$responseData = $paymentHelper->convertStringToArray($response['response'], '&');
         $responseData['payment_id'] = (!empty($responseData['payment_id'])) ? $responseData['payment_id'] : $responseData['key'];
         $isPaymentSuccess = isset($responseData['status']) && in_array($responseData['status'], ['90','100']);
 
-        $notifications = json_decode($this->sessionStorage->getPlugin()->getValue('notifications'));
+        $notifications = json_decode($sessionStorage->getPlugin()->getValue('notifications'));
         array_push($notifications,[
-                'message' => $this->paymentHelper->getNovalnetStatusText($responseData),
+                'message' => $paymentHelper->getNovalnetStatusText($responseData),
                 'type'    => $isPaymentSuccess ? 'success' : 'error',
                 'code'    => 0
             ]);
-        $this->sessionStorage->getPlugin()->setValue('notifications', json_encode($notifications));
+        $sessionStorage->getPlugin()->setValue('notifications', json_encode($notifications));
         
 
         if($isPaymentSuccess)
         {
             if(!preg_match('/^[0-9]/', $responseData['test_mode']))
             {
-                $responseData['test_mode'] = $this->paymentHelper->decodeData($responseData['test_mode'], $responseData['uniqid']);
-                $responseData['amount']    = $this->paymentHelper->decodeData($responseData['amount'], $responseData['uniqid']) / 100;
+                $responseData['test_mode'] = $paymentHelper->decodeData($responseData['test_mode'], $responseData['uniqid']);
+                $responseData['amount']    = $paymentHelper->decodeData($responseData['amount'], $responseData['uniqid']) / 100;
             }
 
             //~ if(isset($serverRequestData['data']['pan_hash']))
@@ -317,7 +317,7 @@ class NovalnetServiceProvider extends ServiceProvider
             //~ {
                 //~ unset($serverRequestData['data']['pan_hash']);
             //~ }
-            $this->sessionStorage->getPlugin()->setValue('nnPaymentData', array_merge($serverRequestData['data'], $responseData));
+            $sessionStorage->getPlugin()->setValue('nnPaymentData', array_merge($serverRequestData['data'], $responseData));
 
             // Redirect to the success page.
             //return $this->response->redirectTo('place-order');
