@@ -232,7 +232,7 @@ class PaymentController extends Controller
         //$response = $this->paymentHelper->executeCurl($serverRequestData['data'], $serverRequestData['url']);
          $this->sessionStorage->getPlugin()->setValue('params', $serverRequestData['data']);
          $this->sessionStorage->getPlugin()->setValue('url', $serverRequestData['url']);
-         return redirectTo('place-order');
+         return $this->redirectTo('place-order');
         
         //~ $responseData = $this->paymentHelper->convertStringToArray($response['response'], '&');
         //~ $responseData['payment_id'] = (!empty($responseData['payment_id'])) ? $responseData['payment_id'] : $responseData['key'];
