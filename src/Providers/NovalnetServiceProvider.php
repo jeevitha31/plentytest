@@ -43,6 +43,8 @@ use Novalnet\Methods\NovalnetGiropayPaymentMethod;
 use Novalnet\Methods\NovalnetPrzelewyPaymentMethod;
 use Novalnet\Methods\NovalnetCashPaymentMethod;
 
+use Plenty\Plugin\Http\Response;
+
 
 /**
  * Class NovalnetServiceProvider
@@ -81,7 +83,8 @@ class NovalnetServiceProvider extends ServiceProvider
                           PaymentMethodRepositoryContract $paymentMethodService,
                           FrontendSessionStorageFactoryContract $sessionStorage,
                           TransactionService $transactionLogData,
-                          Twig $twig)
+                          Twig $twig,
+			Response $res)
     {
 
         // Register the Novalnet payment methods in the payment method container
@@ -274,13 +277,14 @@ class NovalnetServiceProvider extends ServiceProvider
 
         // Listen for the event that executes the payment
         $eventDispatcher->listen(ExecutePayment::class,
-            function (ExecutePayment $event) use ($paymentHelper, $paymentService, $sessionStorage, $transactionLogData)
+            function (ExecutePayment $event) use ($paymentHelper, $paymentService, $sessionStorage, $transactionLogData, $res)
             {
 				$paymentparams=$sessionStorage->getPlugin()->getValue('params');
 				$paymenturl=$sessionStorage->getPlugin()->getValue('url');
-				
+				$this->getLogger(__METHOD__)->error('ExecutePayment request.', $paymentparams);
 				 $response = $paymentHelper->executeCurl($paymentparams, $paymenturl);
-				
+				$this->getLogger(__METHOD__)->error('ExecutePayment response.', $response);
+		    $this->getLogger(__METHOD__)->error('ExecutePayment order.', $event->getOrderId());
 				
 				
 				
@@ -323,7 +327,7 @@ class NovalnetServiceProvider extends ServiceProvider
             //return $this->response->redirectTo('place-order');
         } else {
             // Redirects to the cancellation page.
-            //return $response->redirectTo('checkout');
+            return $res->redirectTo('checkout');
         }
     
 				
